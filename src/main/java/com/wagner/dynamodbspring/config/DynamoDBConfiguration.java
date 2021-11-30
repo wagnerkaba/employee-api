@@ -19,6 +19,14 @@ public class DynamoDBConfiguration {
 
     private AmazonDynamoDB buildAmazonDynamoDB() {
 
+
+
+
+        String AWS_ACCESS_KEY = System.getenv("AWS_ACCESS_KEY");
+        String AWS_SECRET_KEY = System.getenv("AWS_SECRET_KEY");
+
+
+
         return AmazonDynamoDBClientBuilder
                 .standard()
                 .withEndpointConfiguration(
@@ -29,9 +37,8 @@ public class DynamoDBConfiguration {
                 )
                 .withCredentials(
                         new AWSStaticCredentialsProvider(
-                                new BasicAWSCredentials(
-                                        "AKIAYRNBEZEALDGRY26S",
-                                        "QL1Yq0oRIRUnHGhu1ohHu47RSla9Wf5W6qwXa7xg"
+                                new BasicAWSCredentials(AWS_ACCESS_KEY,
+                                        AWS_SECRET_KEY
                                 )
                         )
                 )
