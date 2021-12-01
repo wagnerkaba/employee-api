@@ -21,6 +21,9 @@ public class DynamoDBConfiguration {
 
 
 
+        // Salvei o login e o password do AWS como "environment variables"
+        // Configurei as "environment variables" tanto no Intellij (para funcionar localmente) quanto no Heroku (para funcionar na nuvem)
+        // System.getenv é um método para ler as "environment variables"
 
         String AWS_ACCESS_KEY = System.getenv("AWS_ACCESS_KEY");
         String AWS_SECRET_KEY = System.getenv("AWS_SECRET_KEY");
