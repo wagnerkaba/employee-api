@@ -1,8 +1,6 @@
 # Sistema simples de banco de dados de empregados utilizando DynamoDB e Spring Boot
 
-Documentação disponível em:
-
-Heroku URL: 
+Documentação disponível em: https://employee-w.herokuapp.com/swagger-ui.html
 
 **Tecnologias utilizadas:**
 
